@@ -23,7 +23,7 @@
 .left img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover; /* Ensures the image covers the entire area without distortion */
+	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
@@ -33,7 +33,7 @@
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /* Space between content and footer */
+	justify-content: space-between;
 }
 
 .title {
@@ -58,9 +58,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: auto; /* Push footer to the bottom */
-	padding: 10px 0; /* Adds some padding to the footer */
-	border-top: 1px solid #ddd; /* Adds a border at the top of the footer */
+	margin-top: auto;
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
 }
 
 .rating {
@@ -71,26 +71,27 @@
 .star {
 	display: flex;
 	align-items: center;
-	gap: 8px; /* Reduced space between icons and text */
-	font-size: 16px; /* Reduced font size for a smaller appearance */
+	gap: 8px;
+	font-size: 16px;
 	color: #f1c40f;
 }
 
 .star img {
-	width: 10px; /* Reduced size of the icons */
-	height: 10px;
-	object-fit: contain; /* Ensure the image fits within its container */
+	width: 12px;
+	height: 12px;
+	object-fit: contain;
 }
 
 .star span {
-	font-size: 16px; /* Adjusted size of the text */
-	margin-left: 4px; /* Reduced space between the text and the icons */
-	color: #333; /* Text color */
+	font-size: 16px;
+	margin-left: 4px;
+	color: #333;
 }
 
 .fav-btn,
+.unfav-btn,
 .cart-btn,
-.unfav-btn {
+.uncart-btn {
 	padding: 10px 15px;
 	border: none;
 	border-radius: 5px;
@@ -101,22 +102,24 @@
 }
 
 .fav-btn {
-	background-color: #e74c3c; /* Red color for favourite button */
-	margin-right: 8px; /* Space between the two buttons */
+	background-color: #e74c3c;
 }
+
 .unfav-btn {
-	background-color: limegreen; /* Red color for favourite button */
-	margin-right: 8px; /* Space between the two buttons */
+	background-color: limegreen;
 }
 
 .cart-btn {
-	background-color: #3498db; /* Blue color for add to cart button */
+	background-color: #3498db; /* Blue for cart */
 }
 
-.fav-btn:hover {
-	background-color: #c0392b; /* Darker red on hover */
+.uncart-btn {
+	background-color: #2ecc71; /* Green for remove from cart */
 }
 
-.cart-btn:hover {
-	background-color: #2980b9; /* Darker blue on hover */
-}
+/* .fav-btn:hover,
+.cart-btn:hover,
+.unfav-btn:hover,
+.uncart-btn:hover {
+	opacity: 0.8;
+} */
